@@ -17,8 +17,6 @@ if(isset($_POST['login'])) {
           exit;
         }
     }
-    
-    $eror = true
 }
 
 ?>
