@@ -46,7 +46,7 @@ function registrasi($data) {
 
     //enkripsu password lek biar tambah nilai abang syafwan (acak password di dalam data base)
         //$password = $password_hash($password, PASSWORD_DEFAULT); << yang ini lupa cara pakeknya wkwkkw
-        $password = md5($password); //nah kalau yang ini bisa tapi gampang di retas sama hengkel FF
+        $password =($password); //nah kalau yang ini bisa tapi gampang di retas sama hengkel FF
 
     //nah ni tambahkan user baru ke data base bosskuh
     mysqli_query($conn, "INSERT INTO user VALUES('', '$username', '$password', '$email')");
